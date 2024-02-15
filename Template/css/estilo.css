@@ -1,0 +1,406 @@
+/*body {
+    cursor: url(/img/cursor.png) , auto;
+ } /*Insere uma imagem para substituir o cursor*/
+
+
+
+
+body {
+    width: 500px;
+    height: 600px;
+    background-color: rgba(240, 240, 240, 0.685);
+    border: 1px solid black;
+
+    /*position*/
+    position: fixed;
+    top: calc(50% - 600px / 2);
+    right: calc(50% - 500px / 2);
+}
+
+
+
+/*################CABEÇALHO#####################*/
+#cabecalho {
+    width: 480px;
+    height: 90px;
+    border: 1px solid white;
+    background-color: white;
+    margin: 2%;
+}
+
+#logo {
+    background-color: white;
+    width: 80px;
+    height: 30px; /* Adicione uma altura para o contêiner */
+
+
+    padding-left: 12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) ;   
+}
+
+
+#usuario {
+    width: 150px;
+    height: 10px;
+    list-style: none;
+    padding: 0;
+    
+    position: absolute;
+    right: 8px;
+    top: -5px;
+    
+    display: flex;
+    padding-right: 10px;
+    padding-top:10px; ;
+    flex-direction:row;
+    background-color: white;
+}
+
+#usuario li {
+    width: auto;
+    font-size: 10px;
+    margin-left: 14px; /*Separa um item dos outros*/
+    text-align: center;
+    line-height: 1px;
+    background-color: white;
+    
+}
+
+#usuario li a {
+    text-decoration: none;
+    color: black;
+}
+
+#favorito {
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    position: absolute;
+    top: 57px;
+    right: 50px;
+    border: 6px solid white ;
+}
+
+#favorito span {
+    font-size: 17px;
+}
+
+#favorito:hover {
+    top: 57px;
+    right: 50px;
+    background-color: rgba(240, 240, 240, 0.685);
+    border-radius: 50%;
+    border: 6px solid rgba(240, 240, 240, 0.685);
+
+}
+
+
+#sacola {
+    background-color: white;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    border: 7px solid white;
+}
+
+#sacola span {
+    font-size: 18px;
+    
+}
+
+#sacola:hover {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.685);
+    border: 7px solid rgba(240, 240, 240, 0.685);
+
+}
+
+
+#find {
+    width: 100px;
+    
+    position: absolute;
+    top: 60px;
+    right: 95px;
+    
+    background-color: white;
+}
+
+#lupa {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(240, 240, 240, 0.685);
+    position: relative; /*posiciona exatamente onde voce queira dentro de um elemento*/
+    border: 1px solid rgba(240, 240, 240, 0.685);
+    border-radius: 50%;
+}
+
+#lupa span {
+    font-size: 17px;
+    position: absolute;
+    top: 2px;
+    left: 2px; 
+}
+
+input {
+    width: 75px;
+    background-color: rgba(240, 240, 240, 0.685);
+    padding-left: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    
+    float: left;
+    background-color: rgba(240, 240, 240, 0.685);
+   
+}
+
+
+
+/*###############NAVECACAO#################*/
+#navegacao {
+    width: 130px;
+    height: 474px;
+    background-color: black;
+    float: left;
+    margin-left: 2% ;
+}
+
+
+
+#lista {
+
+    width: 120px;
+    height: auto;
+    list-style: none; /* remove o item de listagem*/
+    padding: 0;  /*remove a sobra esquerda que fica no fundo*/
+    display: flex; /*deixa flexivel, inserido no elemento pai*/
+    flex-direction: column; /*alinha em uma coluna*/
+    justify-content: center /*controla o alinhamento dos itens*/
+    
+}
+
+
+#lista li {
+    width: 80px;
+    height: 0.5px;
+    background-color: black;
+    /*align-self: center;  alinha o item de acordo com o elemento pai*/
+    flex: 1 1 30; 
+    margin-top: 20px; /*faz com que o texto se separe*/
+  
+    padding-bottom: 20px; /*move todos os elementos da lista para baixo*/
+
+    font-family: 'Roboto', sans-serif; /*Define a fonte*/
+    font-size: 15px; /*Tamanho de fonte*/
+    color: white;
+
+    border-left: 0.5px solid black; 
+
+}
+
+#lista li:hover{
+    
+    border-left: 3px solid white;
+
+}
+
+#lista li a{
+    width: 100px;
+    height: 20px;
+    display: block; /*Faz com que o elemento em linha seja tratado como bloco*/
+    text-decoration: none; /*tira a formatação padrão do navegador*/
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+
+}
+
+.simbolos {
+    width: 70px;
+    height: auto;
+    margin-left: 25px;
+    padding: auto;
+}
+
+#jordan {
+    margin-top: 10px;
+
+}
+
+/*#jordan:hover {  
+   cursor: url(/img/cursor2.png) , auto;  Faz com que o cursos mude para a determinada imagem selecionada ao passar pela imagem
+}*/
+
+#sn {
+    margin-top: 20px;
+}
+
+
+
+/* Parte do vídeo */
+#image { /*Determina o tamanho do elemento de fundo, qual o video sera posicionado  */
+    width: 335px; 
+    height: 120px;
+    background-color: white;
+    float: right;
+    margin-right: 2%;
+}
+
+#zoom {
+    width: 100%; /* Define a largura que o video irá ocupar na tela*/
+    height: auto;
+    z-index: 1;
+}
+
+#nome {
+  
+    width: 100px;
+    margin-left: 5px;   
+    position: absolute;
+    z-index: 2;
+    font-size: 7px;
+
+}
+
+& #nome a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif; 
+   
+
+
+}
+
+
+
+
+
+
+/* MAIN */
+#principal {
+    width: 338px;
+    height: 240px;
+    background-color: white;
+    float: right;
+    margin: 2%;
+    border-top: 10px solid rgba(240, 240, 240, 0.685);;
+}
+
+
+#conheca {
+    width: 130px;
+    
+    position: absolute; /*É possicionado de acordo com seu ancestral  */
+    margin: 17px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+}
+
+
+.blocos {
+    width: 90px;
+    height: 156px;
+   
+    float: left;
+    margin: 74px 9.5px;
+    padding-left: 2.5px;
+ 
+
+}
+
+/*Define a imagem de fundo*/
+#bloco1 {
+    background-image: url(/img/conheça\ 1.PNG);
+    background-size: 92px 156px ; /*Ajusta a imagem de fundo de acordo com o bloco*/
+    background-position: center center; /*Centraliza*/
+
+}
+
+#bloco2 {
+    background-image: url(/img/conheça\ 2.PNG);
+    background-size: 92px 156px ;
+    background-position: center center;
+
+}
+
+#bloco3 {
+    background-image: url(/img/conheça\ 3.PNG);
+    background-size: 92px 156px ;
+    background-position: center center;
+
+}
+
+
+.botao {
+    background-color: white;
+    border: 0.1px solid white;
+    
+
+    text-align: center;  /* Centraliza o texto horizontalmente no centro */
+    line-height: 0.1px;  /* Centraliza verticalmente */
+    border-radius: 8px; 
+    
+    width: 70px;
+    height: 15px;
+    
+    font-size: 6px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    
+    
+  position: relative;
+    top: 129px;
+    left: 8px;
+}
+
+.blocos:hover .botao {
+    position:relative ; 
+    top: 40px;
+    left: 8px;
+}
+
+
+.text  {
+    background: linear-gradient(to top, rgba(0, 0, 0, 90%) 70%, transparent );
+    
+    
+    position: relative;
+    top: 68px;
+    right: 2.5px;
+    
+    width: 77px;
+    height: 50%;
+    
+    padding: 5px ;
+    padding-left:10px ;
+    font-size: 10px;
+    color: white;
+
+    display: none; /*faz com que todo o conteudo não seja visivel  */
+}
+
+.blocos:hover .text { /*= ao passar o cursor na seção "bloco3", a div "text" faz o que for mandado*/
+    display: block; /*faz com que o conteúdo apareça  */
+}
+
+
+/* RODAPE */
+
+#rodape {
+    width: 335px;
+    height: 84px;
+    background-color: white;
+    float: right;
+    margin-right: 2%;
+}
+
