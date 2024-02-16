@@ -272,7 +272,7 @@ input::placeholder {
 
 }
 
-& #nome a {
+ #nome a {
     text-decoration: none;
     color: black;
     font-family: 'Roboto', sans-serif; 
